@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Your Name-Portfolio </title>
+        <style>
+            body{
+                font-family:Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: ghostwhite;
+            }
+            header{
+                background-color: black;
+                color: whitesmoke;
+                text-align: center;
+                padding: 2rem 0;
+                position: relative;
+            }
+            .header-content h1{
+                font-size: 2.5rem;
+        
+            }
+            .profile-picture{
+                width: 100px;
+                height: 100px;
+                border-radius: 75%;
+                object-fit: cover;
+                position: absolute;
+                top: 75px;
+                left: 75px;
+        
+            }
+            nav{
+                background-color: black;
+                color: whitesmoke;
+                text-align: center;
+        
+            }
+            nav ul{
+                list-style-type: none;
+                pad: 0;
+        
+            }
+            nav ul li{
+                display: inline;
+                margin: 0 20px;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color: aliceblue;
+        
+            }
+            .section-content{
+                background-color: aliceblue;
+                padding: 2rem;
+                margin: 1rem;
+                border-radius: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+            }
+            .download-botton{
+                background-color: black;
+                color: antiquewhite;
+                padding: 0.5rem 1rem;
+                text-decoration: none;
+                border-radius: 20px;
+                display: inline-block;
+                margin-top: 10px;
+            }
+            footer{
+                text-align: center;
+                padding: 1rem 0;
+                background-color: black;
+                color: antiquewhite;}
+                ul{
+                    list-style-type: square;
+                    padding-left: 20px;
+
+                }
+            
+           </style> 
+           </head>
+           
+        
+
+   <body>
+    <header>
+        <div class="header-content">
+            <img src="pic.jpg" alt="your profile picture" class="profile-picture">
+            <h1>Gopinath</h1>
+            <p>
+            Passionate on Teaching
+            </p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="About"></a>About</li>
+            <li><a href="Education"></a>Education</li>
+            <li><a href="Skill">Skill</a></li>
+            <li><a href="Project">Project</a></li>
+            <li><a href="Resume">Resume</a></li>
+
+        </ul>
+    </nav>
+    <section id="About">
+        <div class="section-content">
+            <h2>About</h2>
+            <p>Hello Everyone! This is Gopinath S i am a computer science Mentor</p>
+        </div>
+    </section>
+    <section id="Education">
+        <div class="section-content">
+            <h2>M.E.</h2>
+            <p>Madras Institute of technology</p>
+        </div></section>
+<section id="Skill">
+<div class="section-content">
+    <h2>Skill</h2>
+    <ul>  
+        <li>Python</li>
+        <li>Artificial Intelligence</li>
+        <li>Machine Learning</li>
+        <li>Deep Learning
+        </li>
+
+    </ul>
+</div>
+</section>
+<section id="Project">
+    <div class="section-content">
+        <h2>Project</h2>
+        <ul>
+            <li><a href="#">Project 1</a></li>
+            <li><a href="#">project 2</a></li>
+        </ul>
+    </div>
+</section>
+<section id="Resume">
+    <center>
+        <div class="section-content">
+            <h2>Resume</h2>
+            <a href="hhtp://docs.googlr.com/d/1DXjsvpkpzpf">Download</a>
+        </div>
+    </center>
+</section>
+<footer>
+    <p>&copy; 2023 Gopinath</p>
+</footer>
+<script>
+    //smooth scrolling to section when clicking on navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor =>{
+    
+        anchor.addEventlistener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) 
+            {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth' 
+                });
+            }
+        });
+    });
+    </script>    
+   </body>
+   </html>
+     
+   </body>
+   </html>
